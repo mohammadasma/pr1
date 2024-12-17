@@ -1,0 +1,92 @@
+ /* FastFood Page Styles */
+ .fastfood-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .fastfood-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .fastfood-card {
+    width: 220px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .fastfood-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .food-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .fastfood-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin: 15px 0;
+  }
+  
+  .fastfood-card p {
+    font-size: 14px;
+    color: #555;
+    padding: 0 15px 15px;
+    line-height: 1.5;
+  }
+  
+  .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 10px;
+  }
+  
+  .order-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .order-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive design for small screens */
+  @media (max-width: 768px) {
+    .fastfood-items {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .fastfood-card {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+  
